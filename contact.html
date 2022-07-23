@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/profile.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" >
+  <title>Matthias Mueringer - Frontend Engineer</title>
+</head>
+
+<body>
+  <div class="news-line">
+      <span class="info-line">
+      <i class="fa-solid fa-burst thrilled-icon"></i>
+        I'm thrilled to announce that I've joined Brainfish company as a Freelance Frontend Engineer
+        <i class="fa-solid fa-trash-can close-icon"></i>
+      </span>
+  </div>
+
+  <div class="container">
+  <header class="page-header">
+    <nav class="main-navigation page-header_item">
+      <span class="logo">Matthias Mueringer
+      <p>Web Developer. Designer. Coder.</p>
+    </span>
+
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list_item--active">
+            <i class="fa-solid fa-laptop"></i>&nbsp; Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list_item">
+            <i class="fa-solid fa-wifi"></i>&nbsp; About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list_item"><i class="fa-solid fa-mountain-sun"></i>&nbsp; Work Experience</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="naviation-list_item"><i class="fa-solid fa-envelope-circle-check"></i>&nbsp; Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1> Contact </h1>
+      <h3>Thanks for taking the time to reach out. How can I help you today?</h3>
+    <div class="container-intro">
+        <img src="./img/illustration-contact.webp" alt="">
+
+      <form action="https://formsubmit.co/mmueringer@web.de" method="POST">
+        <input type="hidden" name="_subject" value="You received a new e-mail!">
+        <div class="form-control">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Email Address</label>
+          <input type="text" name="email" id="email" placeholder="Your email" required>
+        </div>
+        <div class="form-control">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject">
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea id="message" type="text" placeholder="Leave a message"></textarea>
+        </div>
+          <button class="btn-2" type="submit">Send Message</button>
+        </form>
+    </div>
+  </main>
+
+
+<!-- Footer Section -->
+  <footer class="page-footer">
+    <p>Find me on:</p>
+    <div class="social-media">
+      <a href="https://www.github.com" target="_blank">
+        <img src="./img/icons8-github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <img src="./img/icons8-linkedin.svg" alt="linkedin">
+      </a>
+      <p> &copy; Matthias Müringer - 2022 </p>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
