@@ -395,6 +395,10 @@ header {
   height: 500px;
 }
 
+.thank-you p {
+  text-align: center;
+}
+
 
 @media (max-width: 768px) {
 
