@@ -7,5 +7,4 @@ function closeNewsLine() {
     newsLine.classList.add('close');
   })
 }
-
 closeNewsLine();
