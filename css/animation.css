@@ -1,0 +1,30 @@
+.main-navigation p {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #4169e1;
+}
+
+.main-navigation p::before {
+  position: absolute;
+  content:'Web Developer Designer Coder';
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px #000000;
+  overflow: hidden;
+  animation: title 2s normal forwards ease;
+  color: #fff;
+}
+
+/* Keyframes */
+@keyframes title {
+  0% {
+    width: 0;
+}
+  50% {
+    width: 100%;
+}
+  100% {
+    width: 0;
+  }
+}
