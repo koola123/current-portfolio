@@ -10,10 +10,9 @@
   position: absolute;
   content:'Web Developer Designer Coder';
   white-space: nowrap;
-  text-shadow: 2px 2px 4px #000000;
   overflow: hidden;
   animation: title 2s normal forwards ease;
-  color: #fff;
+  color: blue;
 }
 
 /* Keyframes */

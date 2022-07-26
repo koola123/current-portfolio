@@ -8,3 +8,7 @@ function closeNewsLine() {
   })
 }
 closeNewsLine();
+
+let menuBtn = document.querySelector('.menu-btn').addEventListener('click', function() {
+  document.querySelector('.navigation-list').classList.toggle('show')
+})

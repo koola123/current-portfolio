@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/profile.jpeg">
+  <link rel="shortcut icon" href="img/profile2.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,36 +12,38 @@
 </head>
 
 <body>
+  <div class="menu-btn">
+  <i class="fa-solid fa-bars"></i>
+  </div>
   <div class="news-line">
       <span class="info-line">
-      <i class="fa-solid fa-burst thrilled-icon"></i>
+        <i class="fa-solid fa-fire"></i>
         I'm thrilled to announce that I've joined Brainfish company as a Freelance Frontend Engineer
-        <i class="fa-solid fa-trash-can close-icon"></i>
+      <i class="fa-solid fa-xmark close-icon"></i>
       </span>
   </div>
 
   <div class="container">
   <header class="page-header">
-    <nav class="main-navigation page-header_item">
-      <span class="logo"><a href="index.html">Matthias Mueringer</a>
+    <nav class="main-navigation">
+      <span class="logo">Matthias Mueringer
       <p>Web Developer Designer Coder</p>
     </span>
 
-
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list_item--active">
-            <i class="fa-solid fa-laptop"></i>&nbsp; Home</a>
+      <ul class="navigation-list">
+        <li>
+          <a href="index.html" class="navigation-list_item--active">
+            <i class="fa-solid fa-laptop"></i>Home</a>
         </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list_item">
-            <i class="fa-solid fa-wifi"></i>&nbsp; About</a>
+        <li>
+          <a href="about.html" class="navigation-list_item">
+            <i class="fa-solid fa-wifi"></i>About</a>
         </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list_item"><i class="fa-solid fa-mountain-sun"></i>&nbsp; Work Experience</a>
+        <li>
+          <a href="work.html" class="navigation-list_item"><i class="fa-solid fa-mountain-sun"></i>Work Experience</a>
         </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="naviation-list_item"><i class="fa-solid fa-envelope-circle-check"></i>&nbsp; Contact</a>
+        <li>
+          <a href="contact.html" class="naviation-list_item"><i class="fa-solid fa-envelope-circle-check"></i>Contact</a>
         </li>
       </ul>
     </nav>
@@ -49,36 +51,39 @@
 
   <section class="curriculum">
     <h1> Bootcamp Curriculum</h1>
+    <div class="curriculum-container">
       <ul>
         <li>
-          <div><span style="color: blue;text-transform: uppercase;letter-spacing: 2px;"> Intro to Frontend Development:</span> Building a Portfolio Site with HTML & CSS (Appox. 1 month duration)</div>
+          <div><span style="color: blue;font-weight: bold;"> Intro to Frontend Development:</span> Building a Portfolio Site with HTML & CSS (Appox. 1 month of duration) --Status: graduated</div>
         </li>
         <li>
-          <div><span style="color: blue;font-weight:bold;">Full Stack Immersion:</span> Building a Pokémon Web App with HTML, CSS, JavaScript (Achievement 1)</div>
+          <div><span style="color: blue;font-weight:bold;">Full Stack Immersion:</span> Building a Pokémon Web App with HTML, CSS, JavaScript (Achievement 1) --Status: graduated</div>
         </li>
         <li>
-          <div><span style="color:blue;font-weight:bold;">Full Stack Immersion:</span> Building a RESTful API with the Mern Stack, the back-end for a movie app (Achievement 2)</div>
+          <div><span style="color:blue;font-weight:bold;">Full Stack Immersion:</span> Building a RESTful API with the Mern Stack, the back-end for a movie app (Achievement 2) --Status: graduated</div>
         </li>
         <li>
-          <div><span style="color: blue;font-weight:bold">Full Stack Immersion:</span> Building the front-end for a movie app with React.js (Achievement 3)</div>
+          <div><span style="color: blue;font-weight:bold">Full Stack Immersion:</span> Building the front-end for a movie app with React.js (Achievement 3) --Status: graduated</div>
         </li>
         <li>
           <div><span style="color: blue;font-weight: bold">Full Stack Immersion:</span> Building a web app that shows events in a city by writing tests, developed in React
-            with AWS Cloud Services (Achievement 4)</div>
+            with AWS Cloud Services (Achievement 4) --Status: almost finished</div>
         </li>
         <li>
-          <div><span style="color: blue;font-weight:bold">Full Stack Immersion:</span> Building Native Applications with JavaScript and TypeScript (Achievement 5)</div>
+          <div><span style="color: blue;font-weight:bold">Full Stack Immersion:</span> Building Native Applications with JavaScript and TypeScript (Achievement 5)--Status: in Progress</div>
         </li>
         <li>
-          <div><span style="color: blue;font-weight: bold">Full Stack Immersion:</span> Building the movie app with another framework in Angular.js (Achievement 6)</div>
+          <div><span style="color: blue;font-weight: bold">Full Stack Immersion:</span> Building the movie app with another framework in Angular.js (Achievement 6) --Status: in Progress</div>
         </li>
       </ul>
+      <div class="work-experience">
+      <img src="./img/Working from anywhere-amico.svg" alt="image">
+      <span>All projects available on Github.com/koola123</span>
+      </div>
+    <hr>
+      </div>
     </section>
-    <div class="work-experience">
-    <img src="./img/Working from anywhere-amico.svg" alt="image">
-    <p>So, would like to see even more? Projects are hosted and therefore available on Github.com 👍</p>
-    </div>
-  <hr>
+
 
 
   <footer class="page-footer">

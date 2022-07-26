@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 html, body {
@@ -16,9 +17,9 @@ html, body {
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 30px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
 }
 
@@ -46,9 +47,30 @@ img {
   user-select: none;
 }
 
+.navigation-list i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.news-line i {
+  padding: 50px
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.about-container {
+  padding: 0 20px;
+}
+
+.about-container .introduction {
+  text-align: justify;
+}
+
 .card-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
 }
 
 .card-text a {
@@ -58,17 +80,22 @@ img {
   color: #333;
   font-weight: 600;
   padding: 5px;
+  font-size: 16px;
   transition: 0.5s ease;
+}
+
+.main-container {
   font-size: 20px;
 }
 
 .card-text a:hover {
-  background: #ccc;
+  background: #4169e1;
+  color: white;
   border-radius: 100px;
 }
 
 .card-title img {
-  width: 100px;
+  width: 200px;
   height: 100px;
   border-radius: 0;
   box-shadow: none;
@@ -82,8 +109,9 @@ img {
 }
 
 .card-text p {
-  text-align: center;
-  margin-top: 10px;
+  text-align: justify;
+  margin: 10px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .card-btn {
@@ -99,16 +127,28 @@ img {
   transition: 0.5s ease-in-out;
 }
 
-.card {
+.card-container {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
   width: 100%;
-  margin: 30px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 50px #ccc;
 }
 
-.card h3 {
-  margin-bottom: 20px;
+.card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 2px #4169e1;
+}
+
+.card-title h3 {
+  text-align: left;
+  font-size: 20px;
 }
 
 /* Contact Form */
@@ -157,10 +197,12 @@ form input {
 /* Fontawesome Classes */
 .thrilled-icon {
   margin-right: 10px;
+  font-size: 1rem;
 }
 
 .close-icon {
   margin-left: 180px;
+  font-size: 1rem;
 }
 
 .tech-icons {
@@ -180,7 +222,7 @@ form input {
 /* Form Area */
 textarea {
   padding: 20px;
-  font-size: 18px;
+  font-size: 17px;
   border: 1px solid #ccc;
 }
 
@@ -216,6 +258,10 @@ hr {
   font-weight: 700;
   font-size: 2rem;
   color: #333;
+}
+
+.logo p {
+  text-align: center;
 }
 
 .main-navigation p {
@@ -343,6 +389,10 @@ header {
   margin-bottom: 40px;
 }
 
+.profile h2 {
+  font-size: 25px;
+}
+
 .profile h3 {
   align-self: flex-end;
 }
@@ -378,16 +428,22 @@ header {
   transform: translate(-50%,-50%);
 }
 
+.work-experience {
+  display: flex;
+  align-items: center;
+}
+
 .work-experience img {
   height: 700px;
   width: 100%;
-  border-radius: 0;
   box-shadow: none;
   object-fit: contain;
 }
 
 .work-experience p {
-  text-align: center;
+  text-align: justify;
+  font-size: 20px;
+
 }
 
 .thank-you img {
@@ -399,7 +455,201 @@ header {
   text-align: center;
 }
 
+.education {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.btn-2 i {
+  margin-right: 5px;
+}
+
+.curriculum-container {
+  height: 100%;
+  padding: 0 50px;
+}
+
+.curriculum {
+  font-size: 20px;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  z-index: 2;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
 
 @media (max-width: 768px) {
+  .news-line {
+    display: none;
+  }
+  .navigation-list {
+    display: none;
+  }
+  .main-navigation .logo {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    text-align: center;
+  }
+  .profile img {
+    width: 250px;
+    height: 250px;
+  }
 
-}
+  .profile-my-stack {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 50px;
+  }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tech-icons img {
+    box-shadow: none;
+    width: 100px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 0;
+  }
+  .tech-icons img:hover {
+    transform: none;
+  }
+  .btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .container-intro {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .contact-title h1 {
+    font-size: 40px;
+  }
+  .contact-title h3 {
+    font-size: 20px;
+    width: 450px;
+    margin: 0 auto;
+  }
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+  }
+  form input {
+    font-size: 14px;
+  }
+  .introduction {
+    padding: 0 20px;
+    height: 800px;
+  }
+  .introduction h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contact-btn {
+    margin-top: 50px;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .card .card-title h3 {
+    font-size: 20px;
+  }
+  .card .card-title img {
+    width: 200px;
+  }
+  .card .card-text {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .card-text a {
+    font-size: 16px;
+  }
+  .about-container {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .work-container {
+    padding: 0 40px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .work-experience {
+   display: block;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+  .curriculum h1 {
+    line-height: 1.2;
+  }
+  .curriculum li {
+    padding: 10px;
+    width: 400px;
+  }
+  .btn-2 {
+    border-radius: 100px;
+    font-size:15px;
+  }
+  .education {
+    height: 1500px;
+  }
+  .menu-btn {
+    display: block;
+    color: black;
+    z-index: 2;
+  }
+  .navigation-list {
+    display: flex;
+    position: absolute;
+    background: white;
+    border-radius: 100px;
+    overflow-x:hidden;
+    transition: 0.8s ease-in-out;
+    top: 50px;
+    left: 0;
+    border: 10px;
+    padding: 5px;
+    z-index: 1;
+    transform: translateX(-1000px);
+  }
+  .navigation-list.show {
+    transform: translateX(0px);
+  }
+
+  .navigation-list i {
+    font-size: 15px;
+  }
+  .navigation-list li a {
+    font-size: 15px;
+  }
